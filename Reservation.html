@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RESERVATION</title>
+    <link rel = "icon" href = "cafe.png" type="image/png">
+    <meta name="viewport" content= "width=device-width, intitial-scale=1.0">
+    <meta charset = "UTF-8">
+   <link rel = "stylesheet" href = "Reservestyle.css">
+  
+ 
+    
+  
+</head>
+<body>
+    <ul>
+        <li><a class= "active" href = "home.html"><img src= "B&A.png" width ="40px" height = "40px" padding = "15px" float= "left" class = "logo"></a></li>
+        <li> <a href="home.html"><img src = "WhomeN.png" width = "15" height = "15"> HOME</a></li>
+        <li> <a href="Menu.html"><img src = "redmenu.png" width = "15" height = "15">MENU</a></li>
+        <li> <a href="sign_in.html"><img src = "loginN.png" width = "15" height = "15">SIGN-IN</a></li>
+         
+        </ul>
+
+   
+    <div class="card">     
+        <h1> SET YOUR RESERVATION!</h1> 
+   
+        <div class = "container">
+    <form action = "/action_page.php">
+            <div class="row">
+              <div class="col1">
+                <label for="fname"> Name</label>
+              </div>
+              <div class="col2">
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col1">
+                <label for="contact">Contact</label>
+              </div>
+              <div class="col2">
+                <input type="number" id="contact" name="contact" placeholder="contact#" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col1">
+                <label for="partysize">Party-size</label>
+              </div>
+              <div class="col2">
+                <input type = "number" min ="0"id = "psize" name = "partysize" placeholder = "Enter Party Size" required>
+              </div>
+            </div>
+        <div class ="row">
+        <div class = "col1">
+        <label for = "time">TIME OF RESERVATION</label>
+       </div>
+        <div class ="col2">
+        <input type = "time" id = "res" name = "reservation" placeholer = "00:00" required>
+        </div>
+        </div>
+
+        <div class ="row">
+
+        <div class = "col1">
+        <label for = "time">DATE OF RESERVATION</label>
+        </div>
+        <div class ="col2">
+        <input type = "date" id = "date" name = "date" required>
+        </div>
+        </div>
+        
+        
+        <input type = "submit" value="Sign in" a href ="thankyou.html">
+   
+    </form>
+</div>
+    </div>
+    </div>
+</body>
+</html>
