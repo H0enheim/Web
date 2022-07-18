@@ -322,11 +322,19 @@
       
       
       @media screen and (max-width: 800px) {
-        .card,.navcard, .tcard, .column, .best{   
+        .card,.navcard,.column, .best{   
           width: 100%;
           height: auto;
           padding: 0px;
           margin:auto;
+        }
+        .tcard, .column {
+          width: 100%;
+          height: auto;
+          padding: 0px;
+          margin:auto;
+          display:flex;
+          flex-direction: column;
         }
         ul{
           width:100%;
