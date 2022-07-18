@@ -101,11 +101,16 @@
       }
       
       li a:hover:not(.active) {
-        background-color: #08897e;
+        background-color: #15d192;
         height:100%;
         width:auto;
-       
+        color: rgb(27, 29, 28)  
       }
+
+      li a.active{
+        border-bottom: 1px solid #15d192;
+      }
+
       button{
         margin: auto;
         display: block;
@@ -162,7 +167,7 @@
         margin-left: 0px;
         margin-bottom: 1px;
         background-size:cover;
-        height:auto;
+        height:40vw;
         width: 100%;
         overflow:hidden;
         
@@ -173,16 +178,16 @@
       
       .tcard {
 
-        background:#1E1C1C;
-        padding:20px;
-        padding-bottom:0x;
+        background:hsl(240, 2%, 22%);
+        padding:0px;
+
         margin-top: 1px;
         margin-right: 0px;
         margin-left: 0px;
         margin-bottom:0px;
         background-size:cover;
-        height:auto;
-        width: 100%;
+        height:50%;
+        max-height: 550px;
         column-width:70%;
         display: flex;
         flex-wrap:flex;
@@ -193,10 +198,11 @@
         
       }
       .column{
+        display: grid;
+        grid-template-columns:1fr 1fr;
         float: left;
         padding: 10px;
-        padding-bottom: 0px;
-        height:100%;
+        padding-bottom: -20px;
         word-wrap: break-word;
         border: 1px solid white;
         width: 100%;
@@ -224,10 +230,35 @@
             border: 1px solid #1E1C1C;
         
       }
+
+       
+      .gcard {
+        
+        position: relative;
+        background:hsl(240, 2%, 22%);
+        padding: 5px;
+        margin-top: 5px;
+        margin-right: -15px;
+        margin-left: 0px;
+        margin-bottom: 10 px;
+        background-size:cover;
+        height:auto;
+        width: 100%;
+        overflow:hidden;
+        z-index: 1;
+        max-width:100rem;
+        margin-inline: auto;
+        padding-inline: 2rem;
+      
+        
+        
+        
+      }
       .gcardh{
         text-align:center;
       
       }
+     
 
       .tabs {
 
@@ -263,103 +294,10 @@
         font-family: sans-serif;
       }
 
-        
-        .gcard {
-        
-          position: relative;
-          background:#1E1C1C;
-          padding: 15px;
-          margin-top: 0px;
-          margin-right: -15px;
-          margin-left: 0px;
-          margin-bottom: 10 px;
-          background-size:cover;
-          height:auto;
-          width: 100%;
-          overflow:hidden;
-          z-index: 1;
-          max-width:100rem;
-          margin-inline: auto;
-          padding-inline: 2rem;
-        
-          
-          
-          
-        }
+       
         
   
-      /**carousel
-      .carousel-wrapper {
-        height: 400px;
-        position: relative;
-        width: 800px;
-        display: block;
-        margin: 50px auto ;
-        border: 2px solid black;
-      }
-      
-      .carousel-item {
-       
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 200px 50px;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-      }
-      .arrow{
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 12px;
-      }
-      .arrow-prev {
-        left: 30px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(135deg);
-      
-      }
-      .arrow-next {
-        right: 30px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(-45deg);
-      }
-      
-      [id^= "item"] {
-        display: none;
-      }
-      .item-1 {
-        z-index: 2;
-        opacity: 1;
-        background: url('nachof.jpeg');
-        background-size: cover;
-      }
-      .item-2 {
-        background: url('j-poppers.jpg');
-        background-size: cover;
-      }
-      .item-3 {
-        background: url('el-nino.jpg');
-        background-size: cover;
-      }
-      
-      *:target ~ .item-1{
-        opacity: 0;
-      }
-      #item-1:target ~ .item-1 {
-        opacity: 1;
-      
-      }
-      #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-        z-index: 3;
-        opacity: 1;
-      } 
-      **/
-    
-      
+
       
 
       
@@ -424,6 +362,8 @@
         }
         video{
           width:100%;
+          height: 50%;
+          flex:1;
           margin:auto;
         }
         button{
