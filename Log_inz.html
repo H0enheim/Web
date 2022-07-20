@@ -34,21 +34,25 @@
         }
         
         #mine {
-        position: webkit-sticky;
-        position: sticky;
-        top:0;
-        list-style-type: none;
-        margin-top: -15px;
-        margin-left: -0px;
-        margin-right: -15px;
-        padding: 0;
-        overflow: hidden;
-        background-color: #212121;
-        width: 100%;
-        z-index:2;
-        
-        
-       
+          position: webkit-sticky;
+    position: sticky;
+    top:0;
+    list-style-type: none;
+    margin-top: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(
+        rgb(58, 59, 59),
+        rgb(44, 44, 44) 10%,
+        rgb(51, 51, 51)
+    );
+    width: 100%;
+    
+    z-index:2;
+    
+         
       }
    
 #wek {
@@ -58,8 +62,8 @@
         border-top: 1px solid #212121;
         margin-right: -20px;
         border-radius: 6px;
-        width:26%;
-        height: 70px;
+        width:21%;
+        height: 60px;
         text-align: center;
         position:sticky;
         
@@ -74,18 +78,24 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 20px 15px;
+        padding: 10px 0px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         
       }
       
       #wek a:hover:not(.active) {
-        background-color: #08897e;
+        background-color: #15d192;
         height:100%;
-        width:300px;
+        width:auto;
+        color: rgb(27, 29, 28)  
        
       }
+      #wek a.active{
+        border-bottom: 3px solid #15d192;
+        width: 100%;
+      }
+
       .container{
         display: block;
         color:rgb(242, 242, 242, 1.0);

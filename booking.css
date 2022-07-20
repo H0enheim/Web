@@ -26,7 +26,7 @@ ul {
     overflow: hidden;
     background: linear-gradient(
         rgb(58, 59, 59),
-        rgb(105, 107, 106) 10%,
+        rgb(44, 44, 44) 10%,
         rgb(51, 51, 51)
     );
     width: 100%;
@@ -80,22 +80,27 @@ ul {
   }
 
   li a.active{
-    border-bottom: 1px solid #15d192;
+    border-bottom: 3px solid #15d192;
   }
+  
 .container{
     background-color:hwb(0 32% 67%);
     margin:200px;
     margin-top: 100px;
+    margin-bottom: 0px;
     box-shadow:10px 15px 20px black;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
-}
+
+
+}    
 .container-time{
     background-color: black;
-    padding:50px;
+    padding:30px;
     outline: 3px solid rgb(0, 255, 170);
     outline-offset: -20px;
     text-align: center;
+
 }
 .heading{
     font-size:35px;
@@ -103,15 +108,19 @@ ul {
 }
 .heading-days{
     color:gold;
-    font-size: 30px;
+    font-size: 20px;
 }
 .heading-phone{
-    font-size:20px;
+    font-size:10px;
 }
 .container-form{
-    padding:20px 0;
-    margin:0 auto;
+    outline: 3px solid rgb(0, 255, 170);
+    outline-offset: -10px;
     color: rgb(240, 235, 235);
+    width:100%;
+    height: auto;
+    padding: 0rem;
+    margin:auto;
 
 }
 form{
@@ -146,6 +155,18 @@ input{
         width:40%;
         color: rgb(27, 29, 28)  
 }
+.map{
+    margin:200px;
+    margin-top: -15px;
+    box-shadow:10px 15px 20px black;
+
+}
+iframe{
+    width:100%; 
+    height:80%;
+    padding-top: 1rem;
+    z-index:0;
+}
 
 @media screen and (max-width: 640px){
     ul{
@@ -155,7 +176,7 @@ input{
         position: static;
     }
     li{
-       margin: 1rem; 
+       margin:auto; 
        width: 100%;
     }
     li a{
@@ -164,6 +185,13 @@ input{
     .container, .container-time,.container-form{
         width:max-content;
         margin:auto;
+        height: auto;
+    }
+    html{
+        width:100%;
+    }
+    body{
+        width:100%;
     }
 
 }

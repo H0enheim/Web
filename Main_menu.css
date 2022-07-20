@@ -92,7 +92,7 @@ ul {
   }
 
   li a.active{
-    border-bottom: 1px solid #15d192;
+    border-bottom: 3px solid #15d192;
   }
   .menu{
     text-shadow: 3px 3px #000000;
@@ -266,15 +266,13 @@ ul {
 
 @media screen and (max-width: 640px){
     ul{
-        flex-direction: column;
-        margin: 0px;
-    }
-    li{
-       margin: 1rem; 
-       width: 100%;
-    }
-    li a{
-        text-align:center;
-    }
+        width:100%;
+        display:inline-flex;
+    
+      
+      }
+      li{
+        width:100%;
+      }
 
 }
