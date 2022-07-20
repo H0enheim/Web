@@ -1,0 +1,169 @@
+body{
+    font-family: sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+    background-image: url(reservation.jpg);
+    background-size:cover;
+}
+h1{
+    text-align:center;
+    padding:0px;
+    margin-bottom:0px;
+    text-shadow: 3px 3px #000000;
+    font-size:4rem;
+}
+ul {
+        
+    position: webkit-sticky;
+    position: sticky;
+    top:0;
+    list-style-type: none;
+    margin-top: -15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(
+        rgb(58, 59, 59),
+        rgb(105, 107, 106) 10%,
+        rgb(51, 51, 51)
+    );
+    width: 100%;
+    
+    z-index:2;
+    
+    
+
+    
+    
+    
+   
+  }
+  
+  li {
+   
+    overflow:hidden;
+    float: left;
+    margin-right: 0px;
+    border-radius: 6px;
+    width:28ch;
+    margin-top: 0%;
+    text-align: center;
+    position:sticky;
+    padding: 0px;
+
+    
+  }
+  
+  
+  
+  
+  
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #15d192;
+    height:100%;
+    width:auto;
+    color: #000000;
+   
+  }
+
+  li a.active{
+    border-bottom: 1px solid #15d192;
+  }
+.container{
+    background-color:hwb(0 32% 67%);
+    margin:200px;
+    margin-top: 100px;
+    box-shadow:10px 15px 20px black;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+}
+.container-time{
+    background-color: black;
+    padding:50px;
+    outline: 3px solid rgb(0, 255, 170);
+    outline-offset: -20px;
+    text-align: center;
+}
+.heading{
+    font-size:35px;
+    text-transform: uppercase;
+}
+.heading-days{
+    color:gold;
+    font-size: 30px;
+}
+.heading-phone{
+    font-size:20px;
+}
+.container-form{
+    padding:20px 0;
+    margin:0 auto;
+    color: rgb(240, 235, 235);
+
+}
+form{
+    display:grid;
+    grid-row-gap: 5px;
+}
+form p{
+    font-weight:600;
+}
+.form-field{
+    
+    align-content:center;
+}
+input{
+    pad: 10px 15px;
+}
+.btn{
+   background: hsl(180, 2%, 18%);
+   color: white;
+   padding: 10px 20px;
+    font-size: 18px;
+    border:none;
+    border-radius: 100px;
+    box-shadow: 7px 10px 12px black;
+    width: 10rem;
+    margin-top: 15px;
+
+}
+.btn:hover{
+    background-color: #15d192;
+        height:auto;
+        width:40%;
+        color: rgb(27, 29, 28)  
+}
+
+@media screen and (max-width: 640px){
+    ul{
+        flex-direction: column;
+        margin: 0px;
+        width:100%;
+        position: static;
+    }
+    li{
+       margin: 1rem; 
+       width: 100%;
+    }
+    li a{
+        text-align:center;
+    }
+    .container, .container-time,.container-form{
+        width:max-content;
+        margin:auto;
+    }
+
+}

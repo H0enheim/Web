@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css" >
+
+
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href = "home.html"><img src= "B&A.png" width ="30px" height = "30px" padding = "15px" float= "left" class = "logo"></a></li>
+        <li> <a href="home.html"><img src = "WhomeN.png" width = "15" height = "15"> HOME</a></li>
+        <li> <a class="active" href="Main_menu.html"><img src = "WhomeN.png" width = "15" height = "15"> MENU</a></li>
+        <li> <a class="active" href="booking.html"><img src = "resN.png" width = "15" height = "15">RESERVE</a></li>
+        <li> <a href="Log_inz.html"><img src = "loginN.png" width = "15" height = "15">SIGN-IN</a></li>
+    </ul>
+    <h1>RESERVATION</h1>
+
+        <div class="container">
+            <div class="container-time">
+                <h2 class="heading">Time Open</h2>
+                <h3 class="heading-days">Monday-Friday</h3>
+                <p>7am - 11am(breakfast)</p>
+                <p>11am - 10pm(lunch/dinner)</p>
+
+                <h3 class="heading-days">Saturday</h3>
+                <p>8am - 1pm(breakfast)</p>
+                <p>1pm - 10pm(lunch/dinner)</p>
+                
+                <h3 class="heading-days">Sunday</h3>
+                <p>8am - 1pm(breakfast)</p>
+                <p>1pm - 9pm(lunch/dinner)</p>
+
+
+                <hr>
+                <h4 class="heading-phone">Call Us: 0921567766</h4>
+            </div>
+
+            <div class="container-form">
+                <form action="#">
+                    <h2 class="heading heading-yellow">Online Reservation</h2>
+                    <div class="form-field">
+                        <p>Name</p>
+                        <input type="text" Placeholder ="Your Name" required>
+                    <div class="form-field">
+                        <p>Email</p>
+                        <input type="text" Placeholder ="Email" required>
+                    </div>
+                    <div class="form-field">
+                        <p>Date</p>
+                        <input type="date"required>
+                    </div>
+                    <div class="form-field">
+                        <p>Time</p>
+                        <input type="time"required>
+                    </div>
+                    <div class="form-field">
+                        <p>Party Size</p>
+                        <input type = "number" min ="0"id = "psize" name = "partysize" placeholder = "Enter Party Size" required>
+                    </div>
+                    <button class = "btn"> Submit</button>
+                </form>   
+            </div>
+        </div>
+</body>
+</html>
