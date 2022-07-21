@@ -266,9 +266,9 @@ ul {
 
 @media screen and (max-width: 640px){
     ul{
-        width:100%;
+        width:auto;
         display:inline-flex;
-    
+        height: auto;
       
       }
       li{
