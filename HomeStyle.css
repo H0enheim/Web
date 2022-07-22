@@ -11,10 +11,11 @@
         text-decoration: none;
       }
       body {
-        
+        background-image: url("Cafebg.jpg");
+        background-size:cover;
+        background-position:center;
        margin:0px;
-        background: #3f3d3d;
-        
+      
       }
       
    
