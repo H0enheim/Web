@@ -11,9 +11,7 @@
         text-decoration: none;
       }
       body {
-        background-image: url("Cafebg.jpg");
-        background-size:cover;
-        background-position:center;
+        
        margin:0px;
       
       }
@@ -231,7 +229,7 @@
       
       
       .navcard {
-        background-image: url("Cafebg.jpg");
+        background-image: url("cafebg.jpg");
         background-size:cover;
         background-position:center;
         padding: 20px;
@@ -277,11 +275,9 @@
         
       }
       .columnn{
-        display: grid;
-        grid-template-columns:1fr 1fr;
         float: left;
         padding: 10px;
-        padding-bottom: -20px;
+        padding-bottom: 10px;
         word-wrap: break-word;
         outline: 3px solid rgb(0, 255, 170);
         outline-offset: -10px;
